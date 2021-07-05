@@ -10,11 +10,12 @@ brew install ethereum
  ( For more environment setup checkout https://geth.ethereum.org )
 
 2. Genesis Block - This is very first block for your local node. Each Node in the network will be initialized with the same genesis block.
-
+- get the list of mainnet / testnet chainid from https://chainid.network/chains.json.
+- Balances are shown in wei 
 ```json
 {
     "config": {
-        "chainId": 15,				[//]: # ( get the list of mainnet / testnet chainid from https://chainid.network/chains.json.)
+        "chainId": 15,				
         "homesteadBlock": 0,
         "eip150Block": 0,
         "eip155Block": 0,
@@ -23,8 +24,8 @@ brew install ethereum
     "difficulty": "400000",	
     "gasLimit": "2100000",
     "alloc": {
-        "0xA2c9aF63ebdE9c217245877967892332772EfcC7": { "balance": "1000000000000000000" },  //Balance in wei 
-        "0x09E508723110e4FEB57A7Dcef284687428c04aC0": { "balance": "1000000000000000000" }   // Balance in wei
+        "0xA2c9aF63ebdE9c217245877967892332772EfcC7": { "balance": "1000000000000000000" },  
+        "0x09E508723110e4FEB57A7Dcef284687428c04aC0": { "balance": "1000000000000000000" }  
     }
 }
 ```
@@ -58,8 +59,10 @@ geth --identity "node03" --http --http.port  "7000" --http.corsdomain  "*" --dat
 
 6. Now you can connect to local nodes with geth. For whole set of commands, visit https://geth.ethereum.org/docs/interface/command-line-options
 
+- Attaching to Node01
+
 ```json
-geth attach http://127.0.0.1:5000 // Attaching to Node01
+geth attach http://127.0.0.1:5000 
 
 eth.accounts
 
