@@ -14,7 +14,7 @@ brew install ethereum
 ```json
 {
     "config": {
-        "chainId": 15,				<!--- get the list of mainnet / testnet chainid from https://chainid.network/chains.json. --->
+        "chainId": 15,				[//]: # ( get the list of mainnet / testnet chainid from https://chainid.network/chains.json.)
         "homesteadBlock": 0,
         "eip150Block": 0,
         "eip155Block": 0,
