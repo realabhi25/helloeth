@@ -70,7 +70,7 @@ eth.getBalance(eth.accounts[0])
 ```
 
 7. Smart Contract  - A simple dApp that transfer funds. Using solidity. Checkout https://docs.soliditylang.org/ for syntax
- - compile the code with 'solc tranfer_fund', Which will generate the abi.
+ - compile the code with `solc transfer_fund`, Which will generate the abi.
  - connect to local blockchain using etherjs / web3 and deploy the abi. ( you can use ganache as well.)
 
 8. Checkout HardHat ( https://hardhat.org/getting-started/#connecting-a-wallet-or-dapp-to-hardhat-network ) or Truffle( https://www.trufflesuite.com ) for deploying interacting with smart contract.
